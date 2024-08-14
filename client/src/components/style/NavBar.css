@@ -1,0 +1,13 @@
+.market_link {
+	text-decoration: none;
+}
+
+.nav-in-Out {
+	border-color: gray;
+	color: rgba(42, 41, 41, 0.845);
+}
+
+.nav-in-Out:hover {
+	background-color: #198754;
+	border-color: gray;
+}

@@ -1,0 +1,33 @@
+.row_brand-list {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	white-space: nowrap;
+	margin-bottom: 50px;
+}
+.row_brand-list .card {
+	margin-right: 10px;
+	white-space: nowrap;
+	min-width: fit-content;
+	flex-shrink: 0;
+}
+.row_brand-list .brand-card {
+	background-color: white;
+	transition: border-color 0.2s ease-out;
+	border: 1px solid lightgray;
+}
+
+.row_brand-list .brand-card:hover {
+	border-color: rgba(54, 54, 54, 0.664); /* Темно-серый цвет при наведении */
+}
+
+.row_brand-list .brand-card.active {
+	background-color: rgb(42, 96, 42); /* Зеленый цвет для выбранного элемента */
+	color: white;
+	border-color: rgb(42, 96, 42);
+}
+@media screen and (max-width: 767px) {
+	.row_brand-list {
+		margin-top: 7px;
+	}
+}

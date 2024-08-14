@@ -1,0 +1,39 @@
+.Property_btn-delete {
+	width: 5px;
+	height: 25px;
+	display: flex;
+
+	justify-content: center;
+
+	align-items: center;
+}
+
+.Property-btn-text {
+	padding-bottom: 3px;
+}
+.Property-row {
+	align-items: center;
+	padding-bottom: 15px;
+}
+.Property-row.removing {
+	animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+		transform: scale(1);
+	}
+	to {
+		opacity: 0;
+		transform: scale(0.95);
+	}
+}
+@media screen and (max-width: 767px) {
+	.Property-row {
+		flex-direction: column-reverse;
+	}
+	.Property-label {
+		padding-bottom: 15px;
+	}
+}

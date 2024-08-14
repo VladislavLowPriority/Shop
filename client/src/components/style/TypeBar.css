@@ -1,0 +1,13 @@
+.list-device .list-group-item {
+	cursor: pointer;
+	background-color: white;
+}
+
+.list-device .list-group-item.active {
+	background-color: grey;
+	border-color: grey;
+}
+
+.list-device .list-group-item:not(.active):hover {
+	background-color: darkgrey;
+}
